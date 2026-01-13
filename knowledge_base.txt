@@ -1,0 +1,1364 @@
+
+##
+1. Secure Messaging Platform
+Technologies: C++11, Couchbase, Sqlite, Boost.Asio, OpenSSL, Jenkins
+Duration: 6 months
+Developed a platform for messaging with a security feature protecting user messages and
+data from any third party, including the owner of the servers and the platform itself. Utilized 
+asymmetric cryptography to create this feature. Created a highly scalable multithreaded server for the platform and a distributed multiserver backend based on a Couchbase distributed NoSQL database cluster.
+
+Short: the project is for developing backend of secure messaging platform. We used cryptography and developed high-load server.
+#C++2#hls1
+
+##
+2. Casino Platform Backend
+Technologies: C++, Node.js, ACE, SOAP, JavaScript, G2S protocol, Ubuntu, NetBeans
+URL: http://www.oneliveinc.com
+Duration: 1 year
+Development of a casino account management system acting as a bank, with high security, detailed reporting and the US standards compliance.
+Providing interfaces for casino games both in kiosks and mobile/web platforms.
+Interface component allowing to establish communications between Account Based Gaming System and Game Server was also implemented. Account Based Gaming System is the account based wagering system that allows patrons to have a wagering account for a gaming system. Game Server is the game program which is written in JavaScript and working on Node.js server.
+
+Short: the project is for developing account management system for Casino Platform. The development was done due to the US security compliance standards.
+#nodejs3#C++3#hls2
+
+##
+3. Domain Registrar Backend
+Technologies: VS 2012, C++, epp2, JSON, COM, GCC, boost, OpenSSL, MySQL
+Duration: 6 months
+Developed cross-platform backend system, including two main functional components:
+an EPP protocol client communicating with top domain registrars such as Verisign to purchase and setup domains;
+a drop zone “catch” algorithm, allowing the system to catch the domain names getting into drop zone as quickly as possible, thereby competing with other domain registrars for them;
+Implemented both components in an asynchronous model, allowing multiple operations (operation completion handlers) to be executed simultaneously. Enabled the system to choose registrar, tune connection settings, and set up timeframes, and interception mode.
+
+Short: developed a cross-platform backend system working as a domain registrar. The project included development of high-load server.
+#C++4#hls3
+
+##
+4. Video, Audio, and Text Messaging Platform
+Technologies: C++11, Jenkins, boost, WebRTC, Qt, gcc, Apache Cassandra, Android
+Took part in development of a platform for messaging which supports text messaging, audio calls and video calls in two modes: 1-1 and in groups (rooms). Platform does not provide end-user client applications but rather provides a framework (with bindings available in many programming languages) allowing to add ‘social’ messaging feature to any application on any platform (iOS/Android, Windows/Linux/Mac). 
+Platform is based on WebRTC framework, includes sophisticated highly scalable audio&video streaming backend based in a cloud, integrated with NoSQL storage for accounts and other data. Work involved development of client-side C++-based library providing C interface for language bindings, development of sample UI application for Windows/Linux showing the framework functionality based on Qt framework.
+
+Short: a development of a backend of the cross-platform messaging system. The system is based on WebRTC and included highly scalable cloud-based backend.
+#hls7#media1
+
+##
+5. Virtual Windows Registry
+Technologies: EasyHook, C++, C#, WinAPI, WinDbg, code injection
+Duration: 1 year
+Implemented a system allowing an arbitrary application to run in a sandbox to protect system Windows registry from any modification and harm. It also easily deploy an app with a portable "offline registry file".
+The project involved code injection, hooking Windows API functions, debugging third party applications in assembly language, debugging COM multithreaded apartment code, Wow64 support, IAT (Import address table) modification, PE format understanding.
+
+Short: a project included System Programming development of an application focused to protect Windows registry and allowing to execute apps in a sandbox.
+#system4
+
+##
+6. Automotive Routing Quality Assessment Software
+Technologies: Python, MySQL, SQLAlchemy, GEOAlchemy, nosetests, git
+URL: https://maps.yandex.com/
+Duration: 1 year
+The quality evaluation system has been developed, which is now being used to make decisions about making changes in the routing service. If the quality has dropped down, then the changes are not made. If the quality has increased, then there is a green light for launching of new data/software making effect on the QoS.
+The elements involved in the development:
+Yandex's MapReduce cluster computations technology;
+statistical modelling, including analytical and computational approaches, bootstrapping, resampling and Monte Carlo methods;
+SQLAlchemy, GEOAlchemy ORMs.
+
+Short: development of an analogue of Google Maps. Worked with routing algorithms and optimization, the focus is to bring the most effective route to the bunch of customers.
+#python5 #algorithms2#C++6#GIS4#hls8
+
+##
+7. Automotive Routing Service
+Technologies: C++, MapReduce, Apache Hadoop, PostgreSQL, PostGIS
+Duration: 1 year
+A service providing several alternatives for the shortest routes between point A and point B on the map: quickest by time, easiest in terms of number of turns, shortest by distance.
+Work involved implementation of the modern variations of A* and Dijkstra algorithms, including ‘Contraction Hierarchies’ which uses large amount of preliminary precomputations, like breaking road maps into loosely connected parts and precalculating best paths between those parts.
+Service provides an adaptive search result order, which learns habits of a user and prioritizes the resulting routes. Service takes into account current traffic jams information, which is based on bigdata analysis of GPS signals from partner network + users of the mobile application.
+
+Short: implementing a web app working as a route planner. Application includes applying A*, Dijkstra and other algorithms. It also uses Machine Learning and predictive algorithms based on bigdata from GPS signals.
+#GIS2
+
+##
+8.Video, Audio, and Text Messaging Platform
+Technologies: C++11, Jenkins, boost, WebRTC, Qt, gcc, Apache Cassandra
+Took part in development of a platform for messaging which supports text messaging, audio calls and video calls in two modes: 1-1 and in groups (rooms). Platform does not provide end-user client applications but rather provides a framework (with bindings available in many programming languages) allowing to add ‘social’ messaging feature to any application on any platform (iOS/Android, Windows/Linux/Mac). 
+Platform is based on WebRTC framework, includes sophisticated highly scalable audio&video streaming backend based in a cloud, integrated with NoSQL storage for accounts and other data. Work involved development of client-side C++-based library providing C interface for language bindings, development of sample UI application for Windows/Linux showing the framework functionality based on Qt framework.
+
+Short: designed and developed a web application that works like a route planner for commuting services (similar to sharing trips in Uber). App heavily uses routing algorithms and collects and learns the data provided by GPS signals.
+#GIS3
+
+##
+9. Backend API for the mobile application 
+Technologies: Python, Django, MongoDB, Ubuntu
+URL: http://www.shopprapp.com
+Duration: 5 months
+Business goal of that project was to increase amount of top fashion e-shops like Zara, Mango, H&M, Massimo Dutti, that are connected to the Shoppr app. We have developed REST API used by mobile application iOS, Android allowing:
+collecting information about new apparels from top fashion websites like Zara, Mango, H&M etc.;
+storing data into MongoDB;
+providing access to the products and performing the user registration/authorization via REST API. 
+Among technical issues we solved were parsing the instances with loaded JavaScript and/or JavaScript/AJAX. We also parsed data from the HTML with unspecified rules (e.g. image containing necessary text info, but not mentioned of it in page/code).
+
+Short: implemented API that scrapes data from different fashion websites, retrieves the data to MongoDB and provides end results to the user. Scraping mechanism is able to make it through dynamic content.
+#python3#nodejs1
+
+##
+10. Qt Web Thin Client
+Technologies: C++, Qt, WebSocket, Bash, WinAPI
+Duration: 1 month
+Designed a software application developed to serve as a thin client for an existing web application, along with installers and packagers for Windows, MacOS, and Linux. Application uses the Qt Framework, version 5.4, using the QtWebEngine component to display the actual web application.
+
+Short: developed a cross-platform Qt web thin client.
+#C++9#desktop4
+
+##
+11. File Migration Network Program
+Technologies:  C++, boost, Ubuntu, network file system (NFS, CIFS)
+Duration: 6 months
+Worked on the program for migration files and folders from one network file system to another.
+Support of network file systems such as NFS, CIFS, multi-stage process of estimation, copying and finishing. Supports huge storage amounts like petabytes (1000s of Terabytes), including various versions of NetApp data storage devices.
+
+Short: developed an application that helps to migrate files and folders from various file systems like NFS and CIFS. Provides an interface and supports huge volumes of data (petabytes).
+#system6
+
+##
+12. Backend part of the network mobile game.
+Technologies: C#, Google Protocol Buffers, MySQL, Mono, Windows, Linux
+Game logic implementation for a network mobile game. Multithreaded high-load server allowing multiple hundreds of simultaneous connections. The server was originally developed in .NET and then ported to Linux on Mono. So modifications of Mono were required to make the Windows code run successfully on Linux.
+
+Short: implemented backend of the mobile game written in C# and supports multithreading.
+#hls6
+
+##
+13. Virtual Conferencing Application
+Technologies: Direct3D, DirectX, WinAPI, Windows 7, Windows Vista, C++, TCP, RTMP
+Duration: 1 year
+The project was based on VNC technology (specifically, TightVNC), allowing to provide remote access to a local desktop/window area for viewing/control. It was a part of a larger virtual conferences product. The key challenge was to provide function of viewing and controlling a window even when it was partially or completely covered by other windows.
+Also implemented a number of other improvements for TightVNC and other components for managing VNC server from a Flex application.
+
+Short: developed a virtual conferencing app based on VNC. It provides remote access in order to view and control even if the app was covered by other apps windows’.
+#desktop5#media2
+
+##
+14. Middleware Interaction and Data Transformation Platform
+Technologies: C++, ACE, boost, OpenSSL, libcurl, libetpan, EasySoap++
+Duration: 3 years
+Analysis, design, coding and project management of following portable multi-threaded components:
+distributed messaging system similar to JMS but with additional features and high performance;
+Business Process Execution Language (BPEL), validating parser with WSDL integration, support of XPath 1.0 expressions;
+WS-ReliableMessaging protocol client & server based on SOAP 1.1 with WS-Addressing support, SQLite-based persistent storage for messages;
+HTTP/1.1, HTTPS server component, based on use of ACE cross-platform library for networking and multithreading;
+several FireFox and Internet Explorer (IE) plug-ins.
+
+Short: developed C++ based middleware interaction and data transformation platform. The app is multithreaded and provided high performance. Among features are: distributed messaging system, SOAP based messaging protocol and others.
+#C++8#hls5
+
+##
+15. Media streamer
+Technologies: C++, ACE, CppUnit, doxygen
+Duration: 3 months
+Design and development of portable audio streaming client and server components with the following features.
+streaming data to endpoint;
+ability to connect two endpoints, one or both of which are behind firewall (centralized registrar);
+algorithms controlling audio streaming speed and bitrate, supporting wide bandwidth and latency of network conditions.
+
+Short: designed and developed a media streamer including a client and a server. It included ability to connect endpoints behind firewall and implemented algorithms for audio speed/bitrate controlling.
+#media4
+
+##
+16. Automated board sawing optimization on a sawmill
+Technologies: C++, JavaScript, HTML, CSS, gcc 4, Qt, OpenGL, freeglut, MySQL
+Duration: 3 months
+Sawmill automation system, implementing the following features:
+- Obtaining information about structure of the board prepared for sawing with laser scanners and photocells using protocol based on TCP/IP and UDP
+- Building a 3D model of a board using OpenGL
+- Board sawing optimization using mathematical algorithms
+- Emitting signals to conveyors and gang saws using network protocol based on TCP/IP
+- Operator is allowed to set alternative sawing optimization goals (GUI is implemented using Qt library)
+- Operator is allowed to view all sawed and prepared for sawing boards and their sawing models
+- Access rights are separated between few groups of users
+- Calibration of laser heads and photocells by using standard board
+
+Short: developed sawmill automation system including features like building 3D model, optimization using maths algorithms and other things.
+
+
+##
+17. Web Сrawler
+Technologies: C++, gcc 4, ACE, boost, libcurl
+Duration: 1 year
+A web crawler (spider) indexing the whole Internet and parsing each web page to find phone numbers and associated information such as keywords and environment. The system works on a distributed network of computers with a dedicated master server managing tasks distribution.
+System provides a variety of filters to exclude specific URLs and URL patterns from parsing, it also allows managing list of IP networks and countries to be processed.
+
+Short: developed a global crawler indexing web pages and extracting phone information. The crawler worked through a distributed network and provided ability to tune list of IP networks, countries and URL patterns.
+#hls9
+
+##
+18. Hardware drivers
+Technologies:C++, COM, CVS, doxygen, UML-modeling, Rational Rose
+Duration: 6 months
+Design, development and testing of multithreaded serial communication (RS-232, RS-485) and TCP/IP device drivers package.
+
+##
+19. Oil Parameters Computation System
+Technologies: QNX 4, CVS, POSIX, Abyss HTTP server, VBA, MS Excel
+Duration: 1.5 years
+Design, development and testing of oil-calculation system including the following features
+- serial port communication device drivers
+- custom database server development
+- report generation
+- data calculation module
+- TCP/IP communication with automated workplace
+- HTTP server, server-side (C++) and client-side (VBScript) scripts.
+
+##
+20. Trading system
+Technologies:  COM , WinAPI, MFC,  ATL, C++, TCP, MS SQL
+Duration: 4 months
+Client-server system application designed to provide access for trading on RTS (2nd biggest russian stock exchange) via number of tcp-clients through real-time connection to the exchange API. A system API provides traders with enriched interface comparing with the one provided by the stock exchange’ API itself:
+- additional types of orders;
+- bid-and-asked quotations of additional time periods;
+- service information.
+Short: developed a trading system including a client and a server parts. System provided an access to a Russian stock exchange in a real-time, it also had a rich interface compared to a native one provided by stock excahnge.
+
+##
+21. Railway Subgrade Detection
+Technologies: Visual Studio, C++, OpenGL, Windows API, boost, GDAL
+Duration: 6 months
+Development of a program for detecting structural lines and construction of cross-profiles of railway subgrade.
+
+##
+22. Video Surveillance and Security Software
+Technologies: C++, Windows API, SQLite, Qt, JSON, TCP, UDP, XML.
+Duration: 9 months
+Development of video surveillance and security application for monitoring of protected areas. Software uses different hardware such as IP cameras, imager, motion sensors and etc. The project involved multithreading, WinAPI, winsocks, WinPcap, Network protocols (TCP, UDP),  client server architecture, Qt for GUI implementation.
+#hls8#media5
+
+##
+23. HDMI Monitor Status
+Technologies: C#, SetupApi, WinDDK
+Duration: 1 month
+Development of application that allows to detect status of monitors connected to PC through HDMI interface. Each PC has several HDMI ports and monitors connected to them (to all or only to some ports). Main task of the application is to detect what monitor is connected to which HDMI port (monitor identification is done using hardware serial number). For each connected monitor it is necessary to detect its state (turned on/ turned off), status (works well or in failure state), gather information and provide access to it using C# assembly to external tools. Additionally it was required to map specific .NET Screen object to each working monitor with correct support of multi-screen desktops.
+
+Short: developed a system application that detects devices connected to some/all HDMI ports of one PC. Application provided state and status of the ports and mapping of working monitors in a system.
+#system8#embedded2
+
+##
+24. VPN service platform
+Technologies: C++, Windows API, MySQL, Python, PHP, XML, HTML, CSS, JavaScript.
+Duration: 3 months
+Development of  VPN service platform that includes is a client-side and server-side. The client-side represented GUI-wrapper for OpenVPN which provides user friendly experience for easy access to service. The server-side is designed to manage user accounts and VPN servers. The project involved multithreading,  WinAPI, MFC, OpenVPN, Skin Magic for pretty GUI, MySQL.
+#desktop3
+
+##
+25. Memory library porting
+Performed a porting of the class library from Windows to Ubuntu. This class library contains class for work with memory, file system, system information, and access to Microsoft SQL Server.
+Technologies: C++, Windows, Visual Studio, Ubuntu.
+
+##
+26. Netwrix Account Lockout Examiner
+Developed the COM module to unlock locked user accounts in Windows. Developed the web interface which is uses this COM module.
+Technologies:  C++, ATL, JScript, ASP,Windows, Visual Studio.
+
+##
+27. Files backup
+This program allows user to make the following things: back up any user files; create custom backup rules for individual folders; zip backupped files; save disk space with incremental and differential backup engines; synchronize user files between multiple PCs; schedule backups to fit user timetable.
+Technologies: Delphi, GUI, multithreading, Windows API, Windows.
+
+##
+28. Library similar to .NET Framework Class Library
+This library contains classes for work with console, memory, file system, processes and threads, date and time, sockets, type conversions, system information, Windows registry and etc. For each class unit-tests were written.
+Technologies:  C++, Visual Studio.
+
+##
+29. Raster images library
+Technologies:  C++, Windows API, Visual Studio.
+Developed library for work with raster images. This library can load images from bmp, png, tiff, jpeg files formats; save images to bmp, png, tiff, jpeg file formats; rotate, flip, scale and crop images.
+#media6
+
+##
+30. WinAPI wrapper library
+Developed Windows API wrapper class library. This library contains classes for work with Windows GUI, consoles, memory, file system, processes and threads, clipboards, drag and drop, system information, Windows registry and etc.
+Technologies:  C++, Windows API, Visual Studio.
+
+##
+31. Logs storage monitoring application
+Technologies: Python, Flask, RQ, Redis, JSON, jQuery, WebSockets, REST API, Linux
+Duration: 2 months
+Monitoring and analyzing of log files with distributed architecture. Software application works in 2 regimes: filter logs for the previous time period or monitor logs in real time. 
+Application is able to analyze hundreds of gigabytes of text logs with minimum time delays  showing only those logs that meet necessary criteria. Logs could be stored on a distributed basis on different machines in local network. 
+
+Short: developed an app that analyzes and monitors game logs. App is designed to analyze terabytes of data due to the distributed architecture.
+Logs Storage
+#python9
+
+##
+32. Control Driver project
+Technologies: JavaScript, Emby Server, home automation embedded platform
+Duration: 6 months
+Implemented driver for closed home automation embedded platform. Main features - media browsing and remote control of Emby Server (formerly Media Browser). We implemented the driver within pure JavaScript environment as well as HTTP and websocket protocols on top of raw TCP sockets. We also applied Emby Server client side API with authorization and live remote session handling.
+Features different strategies for media browsing. Supports media browsing using Emby Server views hierarchy and iTunes-like queries.
+
+Short: embedded development project focused on home automation. Main features are browsing and remote control of the device.
+Control Driver
+#system1#embedded1
+
+##
+33. Sandbox-like solution on Windows Server 2008 R2 platform
+Technologies: Visual Studio, WDM, KMDF, WinDbg, VirtualKD
+Duration: 6 months
+Transparently install and run software in redirected place, instead of Program Files. It provides good isolation of installed software packages. Component is implemented as kernel mode minifilter driver.
+Transparent per-user redirection of some keys tree within registry. Component is implemented as kernel mode registry filter driver.
+Per-user mutex name mangling. It allows different users to have more than one running instance of protected by named mutex applications. Use user-mode DLL injection and hooking.
+
+Short: system programming project focused on creating a sandbox platform for Windows Server. The goal is to safely install and run software applications.
+Windows Hook
+#system3
+
+##
+34. Machine learning statistics
+Technologies: C++, SAS
+URL: https://www.salford-systems.com
+developing modules for statistical calculations for Salford Systems company;
+implementation of CHAID decision tree building algorithm;
+implementing approach of multi-threaded calculations using large datasets and multiple data sources;
+improving and optimizing developed algorithms for better performance and resources distribution;
+implementation of a set of General Linear Model (GLM) modules using different distributions (normal, poisson, gamma, inverse gaussian) and link functions;
+porting/converting SAS modules to C++ modules.
+
+Short: developing a Data Science module for a bigger application focused on researching human longevity. Module includes maths calculations like General Linear Model.
+Salford
+#algorithms1
+
+##
+35. Industrial facility monitoring application
+Technologies: Python, Django, MongoDB
+Application monitoring the facility activities in real time and warns users of any delays. Users have ability to close, delay, reschedule and reactivate tasks. Application runs real time function to check if there are any Tasks that should be started and monitors each Task which should be started at certain time.
+Features: 
+several access levels to the data and features;
+stores data about companies, equipment, operating personnel, all available documents;
+runs activation function to start monitoring date and time of the Task;
+watches the durations in the steps: step by step according to their sequence;
+warns users with audio alarm on computer if Task time is exceeded;
+checks if all steps are done on time and warns users that Task has been finished;
+marks Task as closed and sets corresponding End Date and Time.
+
+Short: developed an application for oil&gas industry. The main goal is to monitor the changes of the facility activities in a real time. The application is able to track tasks of the different workers with the corresponding steps in real time.
+
+STRAM
+#python4
+
+##
+36. EXIF finder project
+Technologies: node.js, Cordova, RequireJS, NW (Node Webkit), HTML5, CSS3
+Duration: 2 months
+
+Developing html based desktop application (working on Win, MacOS, Linux) using Node webkit. First part of that project included the following functionality:
+select folders on local drives and network shares for images (eg. .png, .jpg, .dng) using node.js and its plugins;
+extract metadata fields from images using node.js to invoke Exiftool commands. Ability to read/write EXIF and XMP fields including DateTimeOriginal, GPS and keywords;
+combine all data into JavaScript objects and provide getters for collection. Create HTML view to display paginated list of all images, including their dimensions, path, creation date, keywords, GPS.
+
+Second part of that project was written in HTML based technologies, Bibliosmart App is a modular application that is built using responsive design. It is making use of several JS libraries that can be seen in external folder.
+
+Major features of the app:
+scanning feature (based on EXIF project);
+improvement of wizard mechanism to work properly on desktops;
+index data using our API;
+show images back in the application and make sure that all features of the application work with a new desktop solution;
+ability to deploy the app to Windows, Mac, and Linux.
+
+Short: developed a hybrid cross-platform application. The goal is to provide a metadata of the images from different sources (folders on local and network  shares), then combine it into one file.
+Exif finder + Bibliosmart
+#nodejs7#desktop1#media3
+
+##
+37. 3D modelling of chemicals packaging
+Technologies: Unreal Engine 4, Coherent UI plugin for UE4, C++, JavaScript, React, jQuery, jQuery UI, Flat UI Free, MySQL
+The project is for showing 3D models of packaging for chemicals. The project is ongoing and as for now, we’ve already implemented logic of packaging choice and generating text description for it. 
+We’ve also implemented option of random viewing 3D models of packaging. UE4 is used to show 3D models. Other things implemented using JavaScript (via Coherent UI).
+
+Short: developed a C++/Unreal Engine based application. The goal is to provide 3D models of packaging for chemicals.
+
+Unreal
+#C++5
+
+##
+38. Social Network
+Technologies: node.js, ECMAScript 6, ExpressJS, React.JS, FluxJS, Git, Heroku, MongoDB 
+YourStance is a social networking website where people can voice their opinion on important issues of the day. The site consists of users, hashtags and comments on both. The idea of the site is that people create a profile and then answer hot-button issues. User can go to someone’s profile page and see where they stand for topics/issues like illegal immigration, torture, etc. 
+From the technical side the project consists of server and client. Server implemented using node.js, ExpressJS, MongoDB, Heroku. Client is a single page application (SPA) currently implemented using ReactJS and mainly Reflux. Among other tasks were:
+getting the base of the website up;
+switching from Reflux to vanilla FluxJS;
+usage of ECMAScript 6 on server and client side.
+
+Short: developed a PoC for social network application.
+Yourstance
+#nodejs2
+
+##
+39. Fantasy Football Predictive Modelling
+Technologies: Python, Matlab
+Duration: 3 months
+Business goal of that project was to build a statistical model that could predict Fantasy Football players’ results for nearest game based on history data of points that players earned in previous games and current status of player (injuries, season, player efficiency and so on). The built statistical model takes into consideration a lot of different parameters (input variables) such as:
+player’s parameters (height, weight, age etc.) which are later used to find possible correlation between these parameters and player’s efficiency;
+player statistics for previous games as well as previous season; it allows to predict how good/bad player is currently at earning points as well as current trend and possible amount of points player could earn in the next game;
+efficiency of all players is calculated in order to find overvalued or undervalued players and compare players with each other (having a kind of rating as an output);
+Among technical issues we solved was finding models that most correctly describe and predict player’s efficiency (as the result specific models were built for specific player types). The project implemented interactions within the Charts using the jQuery library so that the planned tasks could be accomplished correctly, in a timely fashion, and with the desired effect.
+
+Short: developed a predictive model for a Fantasy sports. The goal is to predict players’ results based on history data of earned points and current status of the players (injuries, season, player efficiency and so on), Developed model provide high accuracy of 95-97%.
+Fantasy
+#algorithms4#sports1#python6
+
+##
+40. Fantasy Football REST API
+Technologies: Python, MySQL, SQLalchemy, REST API, py.test
+Duration: 3 months
+Fantasy Football Calculator is a fantasy football website that provides software to help people win their fantasy leagues. One of our client’s needs was to have an up-to-date list of NFL players and game statistics. Our client was in the process of switching stats providers, and needed to develop the code to populate his MySQL database from a new API provider. 
+Part 1. Developed a Python wrapper around a 3rd party’s REST API that provides NFL game statistics. The list of required API endpoints defined by API provider (Fantasy Data). This part of the project is open sourced as a general library for working with the Fantasy Data API. Initially 4 endpoints were supported, as they were needed for the rest of the project built. 
+Part 2. Three background Shovel tasks developed in an existing Python project. They synchronized data between the API and an existing MySQL database. We’ve also developed SQLalchemy models and completed 3 additional tasks: 
+NFL Schedule Synchronizing; 
+Player Roster Synchronizing; 
+Post-game NFL Stats Import.
+
+Short: developed a REST API for a Fantasy Sports application. The goal is to supply the website calculator with an up-to-date data from API providers. REST API is written in Python.
+Fantasy
+#python7#sports2
+
+##
+41. Python Open Source Data Management Library
+Technologies: Python
+Ambry is an Open Source application for collecting, processing, cleaning and publishing public data. Our goal is to make process of building database of hundreds of health, finance and demographic datasets as easy as installing packages with apt-get or rpm.
+Software is extended with the coverage tests and continued with core development and maintenance. The documentation, including installation instructions is at http://ambry.io/
+
+Short: developed a few models for open source Python project.
+Test Python Open Source
+#python8
+
+##
+42. Economicon game
+Technologies: Node.JS, AngularJS, MongoDB
+URL: http://economicon.herokuapp.com
+Duration: 2 months
+Developing a game for 5+ players designed to model different types of economy using only a few basic rules in a turn-based system. Players get a stack of ‘money’, and then get to decide whether to steal from each other, share or co-operate.
+The project is a part of an ESRC funded initiative to create economics and inequality-focused educational resources for 16-19 year olds. The project delivered as a Single Page Application, using ‘push’ model. Developed in LiveScript with server running in node.js.
+
+Short: developed a browser-based economic game written in node.js.
+Economicon
+#nodejs4
+
+##
+43. Betfair API feed integration
+Technologies: .NET 4.0, Silverlight
+Duration: 2 months
+Developing a windows application that is able to extract football (soccer) odds from www.betfair.com and place bets directly on www.betfair.com through the software - betfair.com has APIs for login, extraction of its odds and placing bets. The objective of this application is to allow user to conveniently see all the odds (of each match) on a single page. It also conveniently allows user to place the bet just beside the odds. Football odds were broken down in the following:
+League (English Premier League, Italian Seria A, Spanish Primera, German Bundesliga and French League 1); 
+Matches (List down the matches based on the League chosen by user).
+
+Short: developed a REST API for feeding the data from sport providers into a Betfair gambling application.
+Betfair API
+#gambling#sports3
+
+##
+44. Scalable BigData application driven by map interface
+Technologies: Java, Node.JS, JavaScript, BingMaps API, Redis, HTML, CSS
+Duration: 1 year
+Business goal of that project is to build a user-friendly application with map interface that provides information about energy generation and distribution for seven energy pools existing in the USA. 
+User could specify address of his interest and application provides full information about units and load points located near specified location, energy costs and available distribution tariffs, load zone energy prices and other related information. Additionally user can view history of energy prices for the last several years and current real-time and day-ahead prices for unit/load point/load zone. 
+Application allows user to enter information about energy usage and price from his/her bills. Based on this information and data stored in system, application calculates different alternative tariff plans and possible economy that user could get if he uses energy directly from load point. If specific alternative tariff is accepted by user application provides way to establish connection between user and load point to use energy directly from it. 
+
+Short: developed a bigdata web application, the goal is to feed the data about the energy prices from different energy providers all over the USA. The data provided in a user-friendly interface shown in a map with a few US regions. The data updated automatically each day providing real-time and day-ahead prices.
+Energy costs
+#java1 #nodejs1
+
+##
+45. Big Data Processing for Ad Server
+Technologies: Java, Hadoop, Python, Amazon Web Services 
+Duration: 3 months
+Analyzing logs from AWS S3 with Hadoop and storing result data to MySQL. Project had 4 stages: 
+1. Pure Hadoop JavaAPI project; 
+2. Cascading Java project; 
+3. Hadoop&Python project. 
+4. The project was represented as a simple Python&Boto script for work with HBaseQL. This stage was a result of iterative development of whole system.
+
+Short: developed a server-based application to analyze the logs of placing the advertisements in a real-time. App is written in Java and Python and deployed onto AWS.
+#java2
+
+##
+46. Fuzzy logic
+Technologies: Java, Spring framework 2.0.8, Hibernate 3, Apache Lucene, XML RPC 2.0, PostgreSQL, JDBC
+Duration: 5 months
+This library allows implementing fuzzy logic search according to information selected in advance. The project included: 
+interface of data acquisition. This element provides selection of required information streams (RSS channels, web-sites parsers etc.); 
+data aggregator is responsible for receiving data from the selected stream and transferring to indexes database;
+request received from the user is transferred to the linguistic and semantic part of the kernel which performs morphological and semantic analysis of parts of the request and allocates possible search categories;
+the data is transferred to the requests constructor, which composes possible variants of initial requests and forms requirements to the ranges of numerical parameters, if available. Then the requests are sent to the database;
+search results are delivered through GUI.
+
+Short: developed an application with the goal of implementing a fuzzy logic search for the data acquired through web parsing and RSS channels.
+#java3
+
+##
+47. Production Tasks Control System
+Technologies: Java, J2ME, EJB, JMS, JDBC/SQL, C++, MFC
+Duration: 5 months
+Provides information support of the production process by tasks listing and their delivery to employee’s mobile devices. Three access levels provide convenient work for the head, the manager and for the executors. For the head, it provides:
+a search and tasks editing tool, 
+employees’ activity and departments’ control, 
+For the executors it gives:
+a task list for a day in view of the Status, 
+the POP 
+and other parameters. 
+The centralized tasks storehouse provides effective access and fail-safe feature of the system. The client side is represented as J2ME-Application and C++ Application for the Pocket PC-Platform. 
+
+Short: developed a production tasks control (human resources management) system with multiple layers for the heads of depts/managers and workers/executors.
+#java4
+
+##
+48. Correcting markup for translated text
+Technologies: Java
+Duration: 6 months
+Implemented an algorithm for a translation application, allowing to keep HTML and other markup automatically during translation from one language to another. The translation itself is done by a human and is often optimized by retrieving an appropriate translation from the database of previously existing translations. 
+The work includes:
+developing algorithm of auto-markup of translated text based on markup of original (not translated) text; 
+profiling and optimization of existing and new auto-markup algorithms;
+developing logic of text parsing according to specific grammar/text structure;
+improving parsing/auto-markup functionality using parameters, knowledge base and user experience.
+
+Short: implemented an algorithm for the translation application in order to save existing HTML and general markup. Developed algorithm included parsing of the text accordingly to the grammar structure.
+#java5#algorithms3
+
+##
+49. BPEL development environment
+Technologies: Java, Eclipse, SWT, GEF, JUnit, XPath, XSLT 
+Duration: 1 year
+URL: http://creativescience.com/
+Full-fledged environment for BPEL development, modern text editor with code selection, on the fly validation and context sensitive automatic update. Visual designer of BPEL scripts. Interface of scripts decompression on server. Integrated with the server BPEL language debugger.
+
+Short: developed a BPEL (Business Process Execution Language) environment. It included a visual designer.
+#java6
+
+##
+50. ElasticSearch project
+Technologies: Python, Django, ElasticSearch, Celery, REST API, AngularJS
+Duration: 3 months
+
+Project used ElasticSearch to get data for models by series of user-defined query conditions for different fields. The project included the following functionality:
+Filtering is run against indices with parent-child relationship, returning results satisfying those conditions. The conditions include terms, range, strict matches, combined with different logic operators; in the future there will be implemented aggregated results;
+after the ElasticSearch query is run, results are complemented by necessary fields depending on DB data and then returned via REST API or used inside functions; 
+ElasticSearch index data is updated on a schedule basis, making it up-to-date and the server is not overwhelmed by index updates.
+
+Short: implementation of ElasticSearch into a web/mobile application in order to make filtering and searching of queries faster.
+#python2
+
+##
+51. Cross-platform Open VPN Client
+Technologies: C++, Qt, JavaScript, WebSockets, HTML5, CSS
+Duration: 1 year
+
+The goal of the project is creating a OpenVPN client using Qt & webkit that works on Windows, Ubuntu and Mac OS X. The wrapper contains functionality to safely encrypt credentials locally on the user’s computer, and not store it in clean text as OpenVPN originally does. It also contains a kill-switch, which means that the internet connection on the computer should be switched off in case the user loses  the connectivity to the service. The client should also verify that the DNS servers on the user's computer have been switched and if not, switch them to ones that have been specified. 
+Open VPN GUI 2
+
+Short: developed a cross-platform VPN client with the rich functionality (kill-switch an others).
+#C++7#desktop2
+
+##
+52. Open Street Maps algorithm for the vehicles
+Technologies: C++, Boost, Ubuntu
+Duration: 3 years
+The project solves the problem of finding routes for watering machines and similar mechanisms. An advanced routing system was developed that is based on the Open Source Routing Machine (OSRM). The system is designed to search for a number of routes that begin and end at the same point and cover all the necessary routes inside the selected area. During the implementation the following tasks have been solved:
+avoiding of left turns for the roads with right-hand traffic;
+avoiding of right turns for the roads with left-hand traffic;
+start and stop of the routes on a specific side of the road;
+traversal of intersections of roads from every direction;
+traversal of all the roads inside a free-form polygon;
+integration of traffic data.
+Open Street Maps
+
+Short: developed an application for navigation, traffic, transit routing similar to G.Maps. An app is constantly updated and added with competitive functionality.
+#C++1#GIS1#hls4
+
+##
+53. Web dashboard
+Technologies: Python, Django, Google Maps API, BeagleBone Black, Teensy, Bootstrap, Mailgun
+Duration: 9 months
+
+The goal of the project is to track the objects in a real time on a map and provide the info on the web dashboard. Trucks and tanks act like objects with installed BeagleBone Board (BBB) and Janus modem (all logic is custom and implemented on our side due to complex nature of plugging it in) as a communicator. Server receives data from BBB and provides users with geolocation info about objects and their status at the same time choosing the best route for the truck. In the second stage the BBB device and Janus modem changed to Teensy (Arduino-based) and FONA 3G modem due to its higher efficiency.
+control a FONA 3G modem
+
+Short: created a web application for tracking oil tanks. Application also included communication protocol between 3G modem and BeagleBone as a microcomputer.
+#python1#GIS#system2
+ 
+##
+54. REST API for fashion application
+Technologies: Node.JS, MySQL, Redis, MongoDB 
+Duration: 6 months
+Building a public API for other developers to use relevant technology in their fashion sites and mobile apps.
+Rest API, Node.js coding;
+Public API (test driven development based on a prepared API documentation set);
+Business Logic (data rules implementation) SQL data manipulation;
+Data Adapter (development of a service to process and synchronize data between Scoopt and fashion data providers);
+Batches (completion of SQL scripts to maintain MySQL data).
+External API integration:
+Image Service (integration with Cloudinary API);
+Search Service (data synchronization service with Algolia search API).
+
+Short: develoepd a REST API for a mobile application in fashion field.
+#nodejs5
+
+##
+55. Secure Thin Client
+Technologies: C++/C, WinDDK/IFS  
+Duration: 6 months
+Client/server application that allows to roll back all the changes made after the specified point in time (feature similar to Windows Restore function). Once the work period begins  (creating restore point) it handles all writes to HDD and makes them temporary. All the applications (including Windows itself) see all the changes in usual form (as they are made persistent), but as soon as user selects «Rollback» then all data (including Windows binary and settings files) is then restored to the original state. 
+Additionally the application handles all user inputs (USB ports, floppy drives, external hard drives and etc.) and if some of them are denied by application settings, then it makes them inaccessible. Client application communicates with server part in order to control all user actions and report them to the centralized server.
+
+Short: developed a system programming application for Windows able to roll back changed made in OS. Application also monitors all user inputs and denies its using if some are looks harmful.
+#system7
+
+##
+56. Backend API for hardware client and web admin console
+Technologies: Node.js, ExpressJS, REST API, Parse JavaScript SDK 
+Duration: 6 months
+The goal of this project is to provide backend API for hardware management devices communicating with specific protocol. Backend serves requests performing required logic and using Parse cloud mobile app backend infrastructure to store/retrieve data. Parse application works as a backend for the mobile application.
+Backend API provides:  
+management (registering/unregistering/updating/retrieving) of devices including creating new organizations and admin accounts if required;
+subordinate (attachment/detachment/update/retrieve) of devices;
+activity recording and management of devices.
+
+Web admin console allows management of users. It also provides organizational and technical landscape as a comprehensive configuration for mobile app.
+Internet of Things , backend API and dashboard
+
+Short: developed an IoT application that provides a web application with device management functionality and organizing hierarchy of them.
+#node.js6#embedded3
+
+##
+57. Virtual keyboard project
+Technologies:  Linux/Debian, BeagleBone Black, C/libevent, USB/Bluetooth HID, Bluez,  RTI XP Processor, JavaScript 
+Duration: 2 months
+
+We created an image for BeagleBone Black single-board computer which transform it into remote controllable device recognized as USB/Bluetooth HID keyboard/mouse. Boot time USB keyboard mode also supported for BIOS editing. The main components are custom-made USB HID kernel module, libevent-based server for communications between RTI XP Processor and USB/Bluetooth devices, simple embedded web server for configuration. JavaScript driver for  home automation RTI XP Processor has been developed for remote control of BeagleBone Black. It allows the use of rich user interface creation possibilities of RTI Integration Designer to create virtual keyboard/mouse front-end.
+
+Short: developed an IoT application based on o microcomputer (BeagleBone Black) serving as a keyboard with the common functionality. This keyboard enhances the functionality of another client embedded project.
+Eric Adler (Control Driver)
+#system #embedded4
+
+##
+58. Windows service
+Technologies: C++
+Duration: 1 month
+
+The main goal of the project is to restrict launching applications from the selected list. This service implemented as a dll module checking whether the application is from blacklist (dynamic Windows library) including registry key for applying this dll module. The service allows restoring deleted registry key. Approach consists of writing the key to the Windows registry for the checking dll module, starting the dll module itself when the unauthorized file is launched under name of file or name with the signed certificate of the file.
+
+Short: developed a system application for WinOS. The goal of this app is to restrict launching certain applications.
+#system #C++
+
+##
+59. Database model for a betting odds comparison application
+Technologies: Python, Tornado, SQLAlchemy, PostgreSQL, REST API
+Duration: 2 months
+
+The goal of the project is to get data about odds from different bookmakers via API and visualize it for human interpretation. Implemented API realizes methods for return data about odds, also for map names of sports, leagues and teams from different bookmakers.
+
+Short: developed a web application that gathers the info about bookmakers and their odds. Provided REST API and user interface.
+#python
+
+##
+60. Sports prediction software
+Technologies: Python, GLPK
+Duration: 2 months 
+
+Business goal of that project was to build a tool that could create the best possible lineup of fantasy sport players given their projected fantasy points for the next game. The lineups were built for several sports like NBA, NFL and MLB and several daily fantasy sports (DFS) websites like Fanduel and DraftKings. The tool can build a list of optimal lineups based on the same set of players and their projected fantasy points. 
+
+Among other options it is possible to build the best lineups with one or more players already present (locked) in the lineup. It is also possible to constrain each player's exposure in the list of optimal lineups, min and max number of players from each team in the lineup and more. 
+
+Among technical issues we solved was finding a linear programming model that most correctly and efficiently describes the lineup and all corresponding constraints. The project implemented mixed integer linear programming model which was solved by a GNU Linear Programming Kit (GLPK) solver through a Python interface library Pyomo. The tool was implemented as a web service. Model parameters were populated dynamically with JSON data through a REST-like API interface by the end user and the best lineups were also sent to the user as JSON data. The linear programming model actually consisted of six models, one for each sport type (NBA, NFL, MLB) and DFS website (Fanduel, DraftKings).
+
+Short: developed an application with the goal of predicting (building) the most optimal lineup of NFL, NBA and MLB players. Developed tool implemented as a Python web application with user interface and account management. 
+#python #algorithms
+
+##
+61. Civil Maps project
+Technologies: JavaScript, asm.js, LLVM, HTML5 Web Workers
+Duration: 4 months
+URL: https://civilmaps.com/
+
+Дроны летают над городом и сканируют/собирают облако точек: здания, деревья и т.п. Далее на основе облака точек строится 3Д модель города. Мы работали над небольшой частью этого проекта.
+
+las.js is a javascript library to work with las/laz files. This library processes a large amount of binary data directly into the web-browser without lags or freezes. las.js supports las/laz files version 1.0-1.4 and can read/write various fields of format. las.js supports the packed laz files, which are packed via non-trivial algorithm.
+
+Short: the goal of the project is to rewrite an algorithm that works with geometric data. The algorithm is a part of automotive car system built by a client and based on Computer Vision.
+Node.js / Python Backend Developer
+#GIS
+
+##
+62. Public Transportation Routing System
+Technologies: C++, Qt
+Duration: 3 months
+
+The business goal of the project is to solve the problem of the best routing choice of one of the biggest cities in Africa. During consulting the client there selected 4 types of transportation: minibus, microbus, bus and metro. Price/distance is an optimization criteria. In the process of the development and implementation there were imposed some restrictions:
+transfer is possible for all types of transportation except metro;
+transfer is possible at every point of the way (in case of metro transfers allowed only at metro stations);
+radius of the pedestrian ability to change the transport is limited by this very pedestrian;
+price of the different types of transportation is calculated in different ways (fixed rate or the rate depending on the distance).
+
+Short: The business goal of the project is to solve the problem of the best routing choice of one of the biggest cities in Africa. For this project a client chose a price as an optimization criteria.
+
+#GIS #C++
+
+##
+63. Python REST API for vehicle tracking project
+Technologies: Python, Amazon S3, Amazon Redshift, REST API
+Duration: 2 years
+
+The main purpose of the program is to retrieve data (distance, max speed, engine hours, etc) from Verizon Networkfleet and Zonar systems, and store this data to the Amazon Redshift Database. Intermediate data is loaded to Amazon S3 bucket (csv-formatted). Client uses this program in order to generate analytical reports on a daily basis so the program runs at the end of the day and looks for the data for the full previous day. The program also retrieves historical data at selected date. To accelerate the retrieving of data the program uses multithreaded access to Verizon API.
+
+Short: we provided a solution for telematics provider that worked as a REST API and do some ETL. This API downloads the data about fleet of cars, loaded it into AWS where it goes through ETL and by the end of the day the client gets information as an analytical reports.
+
+Mike Nowak
+#Python
+
+##
+64. Secure Blink based Platform
+Technologies: C++, WebKit/Blink, V8, GYP
+Duration: 2 years
+
+The goal of the project is developing a secure platform to protect websites from remote hacker attacks. The platform is based on Blink/WebKit engine and replaces the potentially unsafe parts of JS and HTML code with safe analogues. The Blink engine was modified with allowances made for requirements of speed and performance.
+
+Short: we built different modules for a system that works as a firewall/proxy for websites. We worked internals of Blink/WebKit engine in order to reduce/replace potentially unsafe parts written in JS/HTML.
+
+Security Blink recoding
+#C++ #System
+
+##
+65. Build Web App Around R project
+Technologies: Python, Django, JSON, jQuery, Linux, R
+Duration: 2 weeks 
+
+Create a new web interface based on Python web framework for the R code project to analyze financial data on. Python code have to run R code with parameters specified in the web interface.
+
+Short: small web-based application that provides analytical reports using R language.
+
+#Python
+
+##
+66. Backend encryption engine
+Technologies: Python, Django, OpenPGP, MailGun, Docker, Postgres, Nginx, AWS, REST API
+Duration: 2 months 
+
+The service is intended for operation with encryption technology based on OpenPGP. Service consists of two parts: 
+- frontend - that allows user to create user accounts using the public key and email, to load keys and authenticate the keys using a Web site and REST API. 
+- backend - which is available from the external network and works with the public part of the service through the REST API
+
+Short: developed an encryption service with exposed REST API for the mailing application. Application written in Python using PGP encryption.
+
+Backend encryption engine
+#Python
+
+##
+67. Optimal Chinese Postman Tour Building Software / route inspection problem
+Technologies: С++
+Duration: 5 months
+
+The application for building optimal Chinese postman tour on any given connected graph has been developed. Chinese postman problem (or route inspection problem) is a task to find shortest closed path or circuit that visits every edge of a connected graph. Several existing solutions have been analyzed and based on the analysis solution which in turn is based on Edmonds matching algorithm and have been chosen and implemented. The implemented solution provided good results in terms of speed and resource consumption comparing to existing alternative solutions. Based on the solution a REST web-interface has been developed that provides an API for finding Chinese tour on any given connected graph using specific parameters. The application involved in the development: 
+• C++;
+• Implementation of custom graph processing algorithms based on "Matching, Euler tours and The Chinese postman" document by Jack Edmonds and Ellis Johnson.
+
+Short: implemented a sophisticated routing algorithm based on research of Edmonds and Johnson. This algorithm added more flexible routing, specifically the shortest path, for the drivers.
+
+Open Street Maps 2
+#C++ #routing #algorithms
+
+##
+68. Google drive integration
+Technologies: Python, OAuth, Redis
+Create module to communicate with google drive service to upload, download, rename, update files in google drive repository
+
+#Python
+
+##
+69. Steam-like game distribution project
+Technologies: C++, WinAPI, dll injection
+Duration: 2 months
+
+Exploring an ability to display advertisement in the third-party games without access to the code base. To achieve the goal we have implemented a library which injects itself into the game process and hooks certain WinAPI calls like a CreateWindow and so on. Requirements gathering for the game distribution project.
+
+Short: research business analysis project aimed to provide an insight how to create similar to Steam gaming platform.
+
+Aszir
+#C++
+
+##
+70. Media streaming 
+Technologies: Python, Tornado Web Server, JSON-RPC
+Duration: 3 months
+
+Developed a MSM part of DELTA system. DELTA system is a Delivery Clouds for User Centric Media Events. It consists of different parts which communicate with each other through JSON-RPC and HTTP. MSM is a Media Services Manager. The MSM, according to the recommendations received from the MDM (other part of DELTA system), makes a decision on which server should stream the requested media and with which bitrate. MSM developed on Python using of Tornado Web Server. MSM support different JSON-RPC request and communicate with other parts of DELTA system through JSON-RPC calls.
+
+Short: created a streaming service which is a part of the bigger system that decides as to what stream and at what bitrate sending a stream.
+
+MSM
+#Python
+
+##
+71. Bee language programming editor in Qt
+Technologies: C++, Qt 
+Duration: 1 month
+
+Developed Qt-based code editor for Bee programming language. We also implemented compiler and debugger functionality. The editor functionality includes the following:
+markup highlights using different encoding;
+finding and correcting the text;
+selecting Bee syntax including wrapping/unwrapping blocks of the code.
+
+Short: created a code editor for the clients needs. This code editor is based on open source solution and meets client requirements for editing its own functional language.
+
+Qt code editor development
+#C++
+
+##
+72. Data analysis project
+Technologies: Python, SciPy, NumPy, Pandas, PostgreSQL, Linux, Google Trends, Google AdWords
+Duration: 2 months
+
+Analysis of trends of marketing brands using Google Trends and Google AdWords data. The tasks that were solved include: determine trend maturity automatically based on search volume time-series data; analysis of trend seasonality; building a model that uses both Google Trends and Google AdWords data (search index and search volume) for time-series analysis. clustering of brands that have similar trends.
+
+Short: developed a Predictive Analytics application that defines different metrics based on time-series analysis of the fashion trends.
+
+#Python #algorithms
+
+##
+73.  Ad data analysis project
+Technologies: Python
+Duration: 1 month
+
+The business goal of a project was to predict an facebook ad (or ad sets) CPC (cost per click) at specific time given past time series data. The data provided by client includes information about 15-minutes frames for 68 ad sets and 4 days, where each 15-minutes frame described by various characteristics (number of likes, clicks, views, click cost, etc.). We have test a regression model which predicts the future CPC basing on previous K 15-minutes frames (where K is an integer, e.g. 10). Despite the fact that data was highly noised the model demonstrated quite good prediction results.
+
+Short: developed a PA application that analyzes time series data of ads posted in Facebook. The goal is to predict the best time to post ads in order to find an optimal CPC.
+#Python #algorithms
+
+##
+74. Windows Server Cluster resource
+Technologies: C++, WinAPI, Cluster API, Boost, STL, Arsenal API, Multithreading, Websocket
+Duration: 3 months
+
+Implemented a Resource Type for Windows Cluster which mount Azure File Storage as hard drive via Arsenal API. Resource allows to bring hard drive online/offline, monitor availability and so on. Project includes two main modules: Cluster Resource DLL and Windows Service. They communicate with each other via websocket protocol.
+#C++ #System
+
+Short: developed a system application that mounts network drive on Azure as an internal hard drive.
+
+##
+75. Human like chatbot on Norwegian language
+Technologies:  Python, Javascript
+Duration: 6 months 
+
+Implemented a chatbot that replies to the question in human-like format. Replies are based on knowledge base of questions and answers in Norwegian language. Additionally to usage of Q&A knowledgebase engine uses some "improving" techniques to provide better results, such as:
+• topic extraction for answers in Q&A knowledgebase; 
+• mistypings corrections of users' messages; 
+• synonyms usage/replacement;
+• replies rating;
+
+The developed chatbot engine has been integrated into web-site based on "www.intercom.io" customer communication platform.
+
+Short: developed a human-like chatbot for Norwegian insurance company.
+
+#NLP
+Automated conversations that feel human
+
+##
+76. Migrate finance desktop application into web
+Technologies: Python, Django, MySQL, Azure
+Duration: 4 months
+
+The purpose of project is to migrate application from desktop version written in Java to web implementation written in Python and hosted on Azure cloud with ability to preview in web interface and to download generated reports. The system generates MS Excel, and MS Word and PDF output reports. These reports provide total market values and allocations broken down by asset class across all manager and beneficiary combinations for a specific date or between two dates. The reports also provide market value, dollar change and percent change by manager, asset class and beneficiary between selected dates.
+
+Short: developed/rewritten financial software made as a desktop version into web application. The software has a complex financial logic integrated into it.
+
+#finance
+
+##
+77. Credit decision engine
+Technologies: node.js
+Duration: 2 months
+
+The goal of the project was to create web layer of a POC application for online loans processing.  Our tasks included creating web app which allows user to create an application for a loan step by step. This web app communicates with scoring system, providing end user with information about application approval and allowing user to provide additional info required for loan.
+#finances
+
+##
+78. Japanese-Russian translation service
+Technologies: Travatar, Moses, EDA, KyTea, Python
+Duration: 1 year
+
+The goal of the project was to create ad text translator from Japanese into Russian. For this purpose, we chose statistical translation model based on a comparison of a large body of parallel texts. They were used as a client texts received from the Q&A service (questions in Russian and translated into Japanese). We also used several statistical translators such as Travatar and Moses. Subsequently was used Travatar, since it showed the greater quality translation, based on objective metrics. One of the key challenges that we have faced is the low quality of the translation, and lack of alignment at the level of sentences. To align it we developed statistical algorithm, that worked searching the closest statements on the basis of the dictionary of n-grams.
+
+Short: developed a NLP module built into an existing ecommerce solution. The goal of the module is providing consistent and reliable translation from Japanese to Russian.
+#NLP
+
+##
+79. Chatbot content management system using ChatScript 
+Technologies: Python, GoogleDocs API
+Duration: 3 months
+
+The goal of the project is to build content management system that bases on Google Spreadsheets and ChatScript. CMS is designed and built, so it can be connected to Fieldbook and Google Sheets with client chatbot app to spin up new chat bots on demand. Also, edits can be done in Google Sheets and then pushed to production.
+This is a solution for writers to create content directly into a CMS, organized around the ChatScript syntax. System processes these images as a learning samples to build a database and corresponding identification model. Based on built model system tries to identify an author for any custom signature.
+
+Short: built a PoC for a CMS integrating NLP/ML module. The final goal of the project is to have an instrument for writing texts/essays in ecommerce field.
+
+#NLP
+
+##
+80. Machine Learning/Comparison solution
+Technologies: Python, Machine Learning, Face detection/recognition
+Duration: 3 months
+
+Implemented a system that detects the movie by acting persons. Initially system is trained with a database of movies and actors so that it detects which set of actors plays in each movie. After that a custom video (movie or an episode of TV series) is provided to the system as input and system based on previous movies analysis detects and recognizes actors playing in the movie/episode (by face), "matches" the actors with the trained database and as the result outputs the suggestion what this movie is or episode of which TV series (correct results are available only if specific episode was not used while training the system). Additionally system detects ads and trailers of other movies inside provided video and "ignores" them for actors detection logic.
+Techniques:
+- finding/detection face in the scene (additionally detection and processing scenes with too small/far and too large/close/partially visible faces);
+- face recognition and matching algorithms;
+- "irrelevant" content detection (ads and trailers);
+- downloading and processing YouTube videos from Python.
+
+Short: developed a facial recognition solution in order to recognize actors in the movies. This solution relies on a machine learning taking database of movies as a training set.
+#Data Science #CV
+
+##
+81. QC File and Workflow Application
+Technologies: Python, Django, JavaScript, React.JS, JQuery,  Bootstrap, HTML, CSS, Amazon S3, MongoDB.
+Duration: 6 months
+
+Business goal of that project is allow to the users upload files with information about mortgage, fill the checklist about mortgage and generate and view reports (individually and monthly). The program have different types of user with different access rights. A 'customer' can upload files and view reports. Application use S3 Storage for holding files. A 'reviewer' can fill the checklist and generate reports. A 'administrator' can manage user accounts. 
+
+Short: developed a financial (loan) web application.
+#finances
+
+82. Web-based toolbox for language learners
+Technologies: Python, Django, NLTK
+Duration: 6 months
+
+This project involves the creation of a web based application involving Natural Language Processing. On the front-end, this application provides the user with tools that allow them to translate, to manually parse and analyse texts, and also create their own dictionaries. In the back-end it we built a database for storing paired translations and create a dictionary database with extensive lemmas.
+
+Short: developed a translation service as a web application. This application uses NLP module in order to parse and analyse texts.
+#Python
+
+##
+83. Tank Level Prediction Algorithm
+Technologies: Python, Scikit, SciPy
+Duration: 6 months
+
+The goal of the project was to predict the level of fluid in a tank based on the data returned from the sensor connected to the tank after the strike is generated by a specific device. The data provided by the client contains information returned by sensors at different various tank levels. After applying the principle component analysis (PCA) to extract patterns from signals at the spectral domain, a simple logistic regression model was created. The model demonstrated good attributes/results and was used for prediction levels with a 98%-100% accuracy.
+
+Short: developed a predictive analytics solution for oil industry. The solution is aimed to predict the level of oil based on the sensor data.
+#Data Science
+
+##
+84. Development of Linux distributive
+Technologies: C, C++, Bash, autotools
+Duration: 6 months
+
+Longhorn is a lightweight Linux distribution which launched on low performance devices. The main distinguishing features are high performance and low machine resource consumption.
+We implemented the following aspects for this project:
+- Porting various software to Longhorn
+- Developing a basic package managing software
+- Developing a basic main screen software
+
+Short: developed different modules for a custom Linux OS designed to be installed on a microcomputer.
+#System programming
+
+##
+85. Program that tracks follow-ups to news stories from major online news websites
+Technologies: TF-IDF, combing, natural language processing, stemming, NLTK, BeautifulSoup, Python, MySQL
+Duration: 6 months
+ 
+The goal of this project was to create a tool that is able to track follow-ups to news stories by calculating similarities between pairs of news articles. News articles were combed from three major news agencies: BBC, NBC and ABC. News updates were captured by frequently monitoring RSS feeds of those news agencies. If a new article was found, it was parsed from the web-page, and HTML and other irrelevant information was stripped, punctuation removed and a Porter stemmer applied. The resulting text was compared with previously processed articles by calculating pairwise TF-IDF score. The main difficulties that we have experienced with this project dealt with estimating a TF-IDF score threshold for grouping similar articles together and with optimizing the algorithms to run fast on a large dataset of previously processed articles. The tool was deployed on a remote server with a MySQL database to store processed articles and their similarity.
+
+Short: developed and NLP module for a web applications that scrapes different articles. The purpose of the module is calculating similarity between news articles.
+#NLP
+
+##
+86. Multi-modal registration project
+Technologies: Python, OpenCV
+Duration: 6 months
+
+The goal of the project is developing software for automatic calculation of animal weight based on the image of the animal with required accuracy not higher than 3-10%. The calculation of weight was based on an algorithm of a reconstruction of a 3D model of the animal based on a set of images and estimating the weight using specific animal parameters such as length of the back, size of the torso and others.
+
+Short: developed an application with the goal of defining a weight of an animal by its photo.
+#CV
+
+##
+87. Video solution athletics platform 
+Technologies: Python, OpenCV 
+Duration: 6 months 
+The goal of the project is to analyze the video of a tennis game for breaking match into shorter videos: one video per point. It was required to remove those parts of the match where the players did not play (the players rest, the gap between the points, etc.); that allowed game statisticians to make further revisions of the game much faster because all "idle" periods of the game were removed and the total length (as soon as file size) was much shorter. The logic of breaking video has been developed based on the analysis of game events that were detected in the video, position, speed and posture of players, ball movement and location, and other parameters. CV algorithms were used: optic flow, background subtraction, HoG detector, pose detection and others.
+Short: delivered a solution for video tennis platform that automatically cuts down tennis games onto highlights. This solution is based on Computer Vision techniques including Machine Learning.
+
+#CV
+
+##
+88. E-book reader
+Technologies: C, Python, Calibre, PocketSphinx, Wit.ai
+Duration: 1 year
+
+The goal of the project is developing software for ebook reader devices based on Calibre systems. The most important feature of the system is voice recognition that is used for manipulating ebooks, executing commands, navigating libraries and searching books. Voice recognition is based on two different engines:
+for command execution, PocketSphinx is used as a grammar based engine with strict rules and good quality of voice recognition in different situations (accent, noise, low volume and so on). 
+additionally, the system included free search functionality that allows to search a book using custom requests from the user, such as "Search a new book of Charles Stross" or "Search most popular books of this year"
+
+Short: developed (including the architecture) a voice recognition system as an essential part of the e-book reader software. The voice recognition system includes both offline and online versions and uses some NLP techniques.
+
+##
+89. Live audio streaming
+Technologies: C++, Qt, JackAudio, ASIO, Vorbis; Linux, MediaRelay, Docker, Nginx, OpenResty, Lua, Redis
+Duration: 6 months
+
+The goal of developed desktop application is to hook up audio stream playing on an ASIO sound card and send it to a remote party with minimal delay and with perfect quality.
+The architecture consists of two parts:
+- desktop - Highly optimized C++ applications which send and receive high quality audio. We use VoIP approach similar to SIP/RTP, but use extremely optimized codes which work only with Vorbis audio codec. For reliable NAT traversal applications communicates with rfc5766-compliant TURN server. HTTP backend is used as signaling protocol.
+- backend - consists of two logical parts - HTTP backend (OpenResty) and MediaRelay (https://github.com/coturn/coturn). Both components share one Redis instance as persistence storage. Backend is designed to be scalable and supports hundreds of connected clients and media streams.
+
+Short: developed an application for voice/audio transmission with minimum possible delay.
+
+##
+90. Full transparent TCP proxy
+Technologies: Linux, iptables/TPROXY, C99, libevent
+Duration: 2 months
+
+We have done R&D in a Linux transparent TCP proxy knowledge domain. https://www.kernel.org/doc/Documentation/networking/tproxy.txt
+
+Some open source implementation of similar software was explored in detail, tested under heavy loads, and reasons of bad behavior were found. Different approaches of proxying TCP connections were tested (read/write, splice; edge triggered vs level). For implementation we selected libevent library which allows us to implement proxy with a very compact code. Implemented proxy supports spoofing sockets (IP_TRANSPARENT).
+Using the feature of a modern Linux kernel we implemented a very simple, but effective multi-process model using  SO_REUSEPORT, which allows multiple instances of proxy to listen on the same IP/port; load balancing is done by kernel. The released server is able to support thousands of TCP sessions per process. Using Docker we implemented simple, but very important for consistence testing, test suite. It includes one-click creation of testing network environment including test client, transparent proxy and test backend ( HTTP or echo server).
+
+Short: rewriting an existing proxy application.
+
+##
+91. Computer Vision assisted native ad video embedding
+Technologies: С++, Caffe, OpenCV
+Duration: 1 month
+
+The goal of the project is the analysis of the scene depicted in the video in order to determine the appropriate logo (the logo of the company that produces the goods shown in the video, or otherwise associated with the image in the video) and the introduction of an organic logo found in the analyzed scene. In addition, the goal is to determine the content of the scene using pre-trained neural network of deep learning, for the introduction of the logo used by the scene analysis and the use of various algorithms, including edge detection, PTAM and others.
+
+Short: developed a Proof-of-Concept for an as industry. An application uses Computer vision techniques in order to embed logos of the company virtually in any video scene at designed point.
+
+##
+92. Cardiovascular disease risk app development
+Technologies: HTML5, CSS3, JS, JQuery, PHP, Zend, MySQL, Statistics.
+Duration: 3 months.
+
+The business goal of this project is to find your current risk for a heart attack or stroke in the next 10 years. Using your current diet, exercise habits, tobacco use, lab data, socio-economic status, age, and sex, this evidence-based analysis tool will give you an estimate of your risk of a heart attack or stroke over the next 10 years. It will also predict your body mass index over the next 20 years and your risk of diabetes in the future compared with other Americans. You will find out how changing your diet, increasing your exercise, and other lifestyle changes will improve your cardiovascular health and prospects of future wellbeing.
+
+Short: developed a calculating engine for a web application aimed to prevent cardiovascular diseases.
+
+##
+93. Basic image processing and image alignment GUI Development
+Technologies: С++, OpenCV, Qt, Pattern correlations
+Duration: 6 months 
+https://www.vineview.com/
+
+The goal of the project is to analyze images of grape fields from drones, in order to find and detect grape rows, estimate start and end points, length and width of each row. Additionally application supports additional image processing functionality such as colors, brightness and contrast manipulation, drawing primitives (lines, polygons), zoom, saving results as shape files, and to support geolocation information.
+
+Short: developed a desktop application for tracking vegetation of grape rows. This application includes cross-platform design and backend that relies on Computer Vision algorithms in order to detect the rows. The app also provides user with enhanced functionality like tuning color/brightness and drawing primitives.
+
+##
+94. Looking for correlations and making prediction in e-commerce system
+Technologies: Python, Scikit-learn
+Duration: 5 months
+
+Implemented system that ranks customers making projections critical for business actions like upgrading from free to premium accounts, amounts of payments for premium accounts and how likely that person will stop using the service. The system is trained on a database of user account information and user series of actions made at the service. After the new user data is provided to system, a ranking based on projected future actions is produced. 
+
+We used the following techniques:
+- feature engineering for machine learning;
+- random forest/decision trees models;
+- "bag of words" like model for user actions.
+
+Short: developed a PA application that does a customer churn analysis. The goal of the app is to predict future customer purchasing behaviour based on his last actions.
+
+##
+95. Image processing - capture and process images
+Technologies: C++, OpenCV
+Duration: 1 month
+
+The goal of the project is developing software for fast automatic calculation number pixels located in color limits. The video system captures 30 cm x 30 cm images of falling objects - at a speed of 5-to-50 km/hr speed with a Logitech C920 camera. The aim is to calculate how many pixels fall within a band of color [e.g. RGB start (255,0,0) to (200,50,50) i.e. R will range from 200-to-255, G from 0-to-50, and B from 0-to-50]. The developed program returns the count of pixels for each image (frame) at a given constant rate - e.g. 10 frames/second-to-60 frames per second.
+
+##
+96.  Domain Name Drop-Catching Backend
+Technologies:  C/C++, mbedtls, protobuf, ZeroMQ
+Duration: 6 months
+
+Developed a scalable high performance backend system for communication with various DRS (domain registration systems) using EPP (Extensible Provisioning Protocol). The main purpose of the system is to gain (i.e. register on registrar's account) dropped domain names that are of some point of interest. The system is using brute force polling and efficiently distributing requests on all available connections to a target DRS. In addition the system may act as a proxy allowing an end user to submit EPP commands to a target DRS and present responses. Startup system configuration is done via simple text configuration files. Variety of settings in those configuration files allow the system to be adaptive to various DRSes in terms of communication policy.
+
+Short: developed a system application that connects to the domain registrar and registers defined domain names if they’re available.
+
+##
+97. Kodi development project
+Technologies: Python, Android
+Duration: 6 months
+
+We created fork of the Kodi video player for specific needs of our customer and its manufacturers. Our code allows to use video streaming provided  by EzServer software and changes UI of Kodi to client's style and their UX specifications.
+
+Short: developed a Kodi plugin.
+
+##
+98. Fletcher Prototype project
+Technologies: Python
+
+Introduction
+Application created to track persons illegal behaviour, based on scanning mentions of this behaviour at the web. 
+
+Business goal of the project was to create a site that will search information of person given his name, information should be relevant to person illegal actions.
+
+On the technical side, we have developed a system, that crawl specific sites to extract relevant information, detect person names and extract facts about it possible illegal behaviour. For this we used following technologies:
+-Python
+-ZeroMQ based crawler/post processor to run many scans in parallel
+-Selenium to scrape websites(mostly JavaScript enabled, we need to interpret JS to make scrapping successful)
+-CoreNLP for person name detection(NER)
+
+Results:
+- Successfully built system conforming to client goals
+- Easy-to-use-system
+
+Short: developed a Proof-of-Concept application that tracks illegal behaviour of the persons based on the mentions in the web. This application includes NLP techniques.
+
+##
+99. Support existing C++ project
+Technologies: C/C++, Windows API, Windows drivers, WFP, TCP networking
+Our client builds a personal filtering protection system for its customers in Windows environment..This project is for a system programming module, that works as a client-server on customer devices. Our goal is building local components consisting of several main components
+Management Service is the main control service performing high level co-ordination and supervision leaving the heavy lifting and performance critical work to the low level libraries or services
+Redirector is a component that filters network traffic and redirects it to the cloud proxy service if necessary, providing internet security according to desired use policy 
+The watchdog is a component that monitors the health of the Agent, provides automated self healing, tamper detection and prevention.
+
+##
+100. Tracking Multiple Athletes in Video project
+Technologies: Python, OpenCV, Faster RCNN, TensorFlow, Multithreading
+Duration: 6 months
+
+The goal of the project is to analyze video from video-server that transfers data from multiple cameras. While the analysis system detects and tracks athletes appearing on video in realtime. Detection of athletes consists of finding people on video that has predefined look and wear specific type of clothes. For detection system uses deep learning model based on TensorFlow Framework, for tracking system uses custom algorithms based on Kalman filter.
+Communication between system and video-server is performed using high-performance custom protocol based on TCP-sockets usage.
+
+##
+101. Dartboard scoring project
+Technologies: Python, C++, OpenCV, TensorFlow
+Duration: 6 months
+
+The goal of the project is to create an augmented reality version of darts game. Using real dart board, darts and video camera, user can create a virtual game that analyzes dartboard and darts positions and calculates scores. Initially camera is oriented to the dart board without darts (start of the game) and then players start throwing darts to the dart board and after each throw
+system detects the segment of the dart board where dart stucks and calculates the score gained by the player. The process of the dart board segmentation, darts detection and scores management is shown over the video from the camera.
+
+##
+102. Resumes parsing and matching with jobs project
+Technologies: Python, NLP, Machine learning, Apache Tika
+Duration: 6 months
+
+The main goal of the project is to build a system that parses resumes and jobs and performs resumes/jobs matching to find resumes matching to specific job or jobs matching to specific resume. For parsing resumes and jobs system uses complex solution based on Apache Tika, ontologies (for skills, cities, universities and so on) and NLP-based techniques. For matching system uses machine learning based algorithms: based on set of different information extracted from resumes and jobs system trains machine learning model. Afterwards based on the trained model system ranks custom resume / job and finds top N jobs / resumes that matches the most and returns matching score. System provides interface for retraining matching model based on new or updated resumes and jobs. Also system provides RESTful API interface that allows to use the functionality of the system for external systems.
+
+##
+103. 
+Elite thoroughbred racing project
+Technologies: Python, OpenCV, Neural networks, Django
+Duration: 6 months
+
+The main goal of the project is to build a web app with Machine Learning module that can utilize the developed predictive algorithms and manage ongoing data.
+The main achievement is 80% accuracy of prediction for elite thoroughbred horses based on different data: cardio and biological information (heart rate, weight, body size, cardiac index and so on), ultrasound/echo, DNA, etc.
+
+Project consists of three basic parts:
+1) Creating machine learning algorithms and models based on provided information about cardio, echo, DNA and eliteness information of the horses;
+2) Creating database and Web Application that manages current and gathers new data about horses, predicts eliteness of custom horse and generates reports;
+3) Creating Web Jobs for automatic retraining of the machine learning models and rescoring them based on updated models and data from the database.
+
+##
+104. Reviewing legal documents by NLP project
+Technologies: Python, NLP, Machine Learning
+Duration: 3 months
+
+Our client builds a financial software (named ‘CF Engine’) in order to model complex financial products (RMBS, ABS, CLO, etc.). The main goal of the project is to extend this software using feature that allows users to review the related legal documents based on the information from the model. The developed model needs to check if specific doc corresponds to one of the created models.
+For example, if processed document is mortgage than model:
+ - parses mortgage document (from PDF, Word, plain text format);
+ - checks if document contains all required information (all parties are specified and described correctly, property is described, interest rate is specified, all information required by law is provided and so on);
+ - if document fits the model then system extracts important information (parties, property description, interest rates and so on) and provides it as summary for user review.
+ 
+System supports different formats of input documents and different types of documents, such as mortgages, car loans, commercial loans and so on. Also system supports different countries of
+operating, i.e. different structure of document for each country and different languages.
+
+Short: as a part of financial management software owned by our client we built a module that reviews and parses associated legal documents checking its correlation to the existing financial model. 
+
+##
+105. C/C++ Linux based signal processing project
+Technologies: C, C++ Python, R, Fortran
+Duration: 6 months
+
+The goal of the project is optimizing the speed of several methods of processing mass spectrometry data from the XCMS package (package for applying LC/MS and GC/MS data processing methods from the Bioconductor project: https://bioconductor.org/packages/release/bioc/html/xcms.html). The expected development of the project: the creation of a desktop application for the processing of mass spectrometry data.
+.
+
+##
+106. Analyse customer behavior in CCTV stream
+Technologies: Python, OpenCV, Deep Learning
+Duration: 6 months
+
+The goal of this project is making video analytics for the specialized intelligent systems of accounting and control of visitors, on the basis of which it is possible both to optimize the adoption of managerial decisions (for example, changing the schedule of a trading facility) and to study the effectiveness of marketing actions.
+
+Within the framework of the current project, the following tasks were accomplished:
+1) definition of characteristics of the general traffic of visitors: volume and time of entrance / exit of visitors on the territory of the trading hall;
+2) determination of personal characteristics of visitors: maximum / minimum and average length of stay in the trading floor;
+3) determination of the individual characteristics of visitors: the identification of regular customers (using unique features, for example, a person) and their preferences (client traffic maps through the trading floor area).
+
+Technical details. The hardware basis of the project is two video cameras installed inside the store, the view angle of which allows you to monitor the input / output zones, and the resolution is sufficient for personal identification (Full HD, or higher); a server equipped with a GeForce GTX 1080 (or higher) graphics card and 8 GB of RAM (or more), the performance of which allows to process the video stream in real time (or close to it).
+
+Algorithmic details.
+1) The video stream of the camera is divided into a sequence of frames processed at a given sampling frequency (for example, frame_step = 3).
+
+2) The current frame is fed to the detector input (neural network based on the ResNet-50 model), which returns the coordinates of the minimum enveloping rectangle, the global CNN-sign (length 256), and also the confidence of each visitor's detection.
+
+3) For rectangles with confidence of the detector above a given threshold, local characteristics calculated by a specialized neural network (also based on the ResNet-50 model) are calculated, taking into account the local characteristics of the visitor by dividing the image into 6 horizontal bands; Local characteristics are combined with a global one.
+
+4) Tracking the visitors by assigning the detected rectangles to one of the existing track lists or initializing a new track list (taking into account the normalized L2 distance of the CNN-signs, the intersection area of ​​the rectangles, as well as the motion path estimated by the Kalman filter).
+
+5) Using the given map of the entrance / exit zones on the territory of the trading floor, the track lists are referred to as input / output, with input data placed in the queue, and output is compared with track lists from the queue in order to identify the visitor.
+
+6) All information about visitors generated during processing is stored in the specified formats (.mp4, .csv, .txt); the values ​​of the main parameters, the input and output paths can be configured using the console user interface.
+
+##
+107. Осторожно: есть вопросы по этичности данного проекта. 
+Создание управляющей программы вооружений
+Technologies: C/C++, Qt, TCP/IP networking, Arduino, Serial port I/O
+Duration: 6 months
+
+Управляющая программа является частью аппаратно-программного комплекса стрелковых тренажеров. Комплекс предназначен для отработки навыков стрельбы из гранатометов (РПГ-7, АГС-17, ГП-25, СПГ-9) в условиях симуляции боевых действий. Роль управляющей программы заключается в организации и координации взаимодействия через сеть всех компонентов комплекса, как программных (компонент Инструктор - отвечает за исполнение и оценку результатов упражнений, Визуализация - отображает процесс симуляции) так и аппаратных (плата Arduino с подключенным датчиком GY-85, на базе которых построен контроллер ввода, симулирующий гранатомет в процессе отработки упражнений). Также управляющая программа отвечает за симуляцию игрового мира, в том числе логику стрельбы, обработку мишеней и баллистику.
+
+##
+108. Recommender engine for quizzes website
+Technologies: Python, NLTK, Scikit-Learn, Tornado
+Duration: 3 months
+
+The aim of the project was to differentiate users that are taking text quizzes based on their interests and history and recommend new complementary quizzes for them. We have been developing subsystems for the newcomers that analyses location and timezone of a new user and propose a starting quizz. During this project we extensively employ different methods of statistical analysis, NLP, time series forecasting, and regression to build the most accurate predicting model.
+
+##
+109. MVP of KYC system
+Having a photo of a person with a passport in his/her hands to determine whether the person is on the passport and the photo is the same.
+
+We implemented a configurable solution: with a parameter controlling the type I and type II errors.
+
+Задача такая: имея фотографию человека с паспортом в руках определить является ли человек на паспорте и фото одним и тем же
+
+Получилось реализовать конфигурируемое решение: с параметром регулирующим ошибки первого-второго рода
+
+##
+110. Optimization of Traffic Counting (multiple object detection + tracking)
+Technologies: OpenCV, Yolo2/Faster RCNN / Mask R-CNN, COCO, Jetson Xavier
+Duration: 2 months
+The aim of the project was to implement traffic counting (multiple object detection + tracking)  for installations placed in the countryside with low power consumption requirements.
+Using background subtraction, deep neural networks and other methods we optimized the models to run on Jetson Xavier hardware platform meeting the clients’ requirements.
+Significant part of the job was to adapt the computation environment to the hardware.
+
+##
+111. License Plates Recognition
+Technologies: tesseract, Python
+Duration: 3 months
+The aim of the project was to implement US license plates recognition solution.
+исходя из опыта работы с аналогичными задачами можно выделить следующие ключевые моменты, которые необходимо выяснить:
+1. определение номера происходить в процессе движения? если да, то необходим понимать характеристики (fps и фокусное расстояние камеры, средние углы установки, фронатльно к потоку, под углом и на какой высоте)
+в этом случае задача также включает применения алгоритмов deconvolution с явным или случайным ядром (зависит от свойств видеооборудования)
+2. идентификация номера происходит в определенном месте кадра (нампример некоторая отсечка на полосе движения или стоп линия перед пунктом пропуска) или потенциально автомобиль может находиться практически в любой точке кадра? во втором случае необходимо также предусмотреть алгорит поиска автомобиля на изображении с последующей идентификацией места установки номерного знака, в противном случае будет достаточно много срабатываний на разные буквенно намерные надписи, например на бортах грузовых автомобилей.
+3. необходимо детально понимать особенности местного законодательства и стандартизации шаблонов номерных знаков. Достаточно часто, местное законодательство допускает размещение графических элементов непосредственно на номерном знаке (не только буквенно-цифровые обозначения). Что является существенным моментом и существенно влияет на качество идентификации и распознавания.
+Как таковая задача распознавания символов в идентифицированном шабло уже достаточно хорошо решена, как с использованием упомянутой библиотеки так и конкурирующих решения на CNN-rCNN (глубокие нейронные сети)
+опыт разработки аналогичных решений с 2005 года начиная. география Кувейт, ОАЭ, Индия, Германия, Россия
+в случае особых сложных условий можно продумать вопрос аппаратного использования стереоскопического зрения, структурированной подсветки, лазерных дальномеров (когда нужная точность более 99%, в том числе в условиях снега, сильного дождя, пылевых и песчаных бурь)
+
+##
+112. Deception Detection using Face Recognition
+The aim of the project is to develop a model and software to invoke psychometric testing through a mobile device.
+The project involves reproducing results of several scientific papers, including DARE approach/algorithm working with video, audio, subtitles streams of data + microexpressions of face to detect whether participant is providing truthful or deceptive answer.
+The existing methods allow to work with court video datasets, while we adapt it to work with selfie-videos recorded from mobile devices.
+The deception detection model is based on three sub-models: video, audio and text (subtitles).
+#NLP #ComputerVision
+
+##
+113. Hotel price comparison solution MVP
+Technologies: Python, Selenium, Scrapy, Vue, Bayessian Modeling, Game Modeling, Statistics
+Duration: 1 month
+We developed a hotel price comparison solution for a group of hotels in Barcelona consisting of the three components:
+Competitors prices collection component, scraping booking prices from price aggregator websites http://hostelbookers.com/ , http://hostelworld.com/ and hotel websites.
+Data visualization tool showing different graphs about the current hotel prices, competitors prices, supply/demand, number of available rooms and other parameters.
+Mathematical model optimizing the prices for the client’s hotel basing on all the competitors, historical, seasonal data.
+
+##
+114. 
+Technologies: Verilog, FPGA, FPGA Xilinx, Zync series
+Duration: 6 months
+8-channel audioprocessor for 256bit, with immersive effects computation (feeling of sound direction)
+
+##
+115. 
+Technologies: Verilog, FPGA, FPGA Xilinx, Zync series
+Duration: 2 months
+Tikhonov regularization implementation to remove image blur for Computer Vision.
+
+##
+116. For Fashion Industry
+
+##
+117. Recognition
+распознование рожи перед ПК, чтобы шевелилась, когда работает, для учета времени
+детектор раговора по телефону водителя
+есть подсчет пасажиров в автобусе входят выходят d 3l
+Порноблокер
+конвертор DICOM в STL с выделением (распознаванием) костей для фильтрации артифактов и лишних поверхностей
+
+##
+118. DSP (Ждем аппрува на использование портфолио от Сергея Титова)
+Разработка устройства автоматического распознавания целей и определения точки прицеливания по видеоизображению на базе процессора TI Sitara DM3730 с DSP ядром TMS320C64x+™ и графического ускорителя POWERVR SGX 530. (2013 год)
+
+##
+119. E-commerce store data warehouse
+Магистраль данных для Интернет-Магазина на маркетплейсах
+
+Технологии: Python, MySQL, Excel, Power BI, Jupyter Notebook
+
+Для компании интернет-магазина, разработана система сбора, анализа данных и прогнозирования поставок и продаж.
+Данные о продажах, остатках на складах, акциях собираются с маркетплейсов Wildberries, OZON, Яндекс.Маркет, СберМегаМаркет.
+Данные, недоступные через API маркетплейсов загружаются в систему вручную с помощью файлов XLS.
+Производится очистка данных, предоставлен интерфейс аналитикам данных клиента для построения и тестирования моделей.
+Модель прогнозирования использует алгоритмы машинного обучения.
+
+Technologies: Python, MySQL, JSON, Excel, Power BI, Jupyter Notebook.
+A system for gathering and analysis of information along with a system for supplies and sales forecast has been developed within this project.
+Sales, stock balance and events data is being gathered via online marketplaces Wildberries, OZON, Yandex.Market and SberMegaMarket.
+Data that is unavailable for online marketplaces’ API is being uploaded to the system manually by using XLS-files.
+A process for data cleaning has been created as well. Clients’ data analysts have been provided with a special interface for modelling and further testing using Business Analytics frameworks such as Power BI.
+The prediction model in this project uses ML algorithms.
+
+##
+120. Meta-analysis of Lung Cancer detection methods applied to X-ray images
+Мета-анализ методов определения рака легких по R-граммам
+Технологии: Deep Learning, CNN, SVM, мат.статистика
+
+Произведен мета-анализ 600+ научных статей за период с 1993 по 2020 годы на тему применения автоматизированных методов выявления рака легких на рентгенограммах. Целью исследование было выяснение эффективности применения методов, основанных на Глубоком Обучении Нейронных Сетей (Deep Learning), в частности конволюционных нейронных сетей (CNN), по сравнению с классическими методами, включая методы опорных векторов (SVM), деревья решений (Decision Trees), методы случайного леса (random forests), линейный дискриминантный анализ (LDA), методы кластеризации и т.д.
+Мета-анализ включает в себя сравнение методов по статистическим метрикам, составлены форест-график (forest plot), воронкообразный график (funnel plot).
+
+Technologies: Deep Learning, CNN, SVM, statistics
+
+We’ve done a meta-analysis of 600+ scientific papers studying automated methods for Lung Cancer detection in radiographs for the period from 1993 till 2020. The goal was to determine the effectiveness of Deep Learning-based methods including Convolutional Neural Networks (CNN) compared to classical methods such as support vector machines (SVM), decision trees, random forests, linear discriminant analysis (LDA), clustering methods etc.
+Meta-analysis includes comparing the two groups of methods using statistical metrics, forest plot and funnel plot.
+
+##
+121. Виртуальная примерочная мебели с применением CV
+
+
+Технологии: Python, YOSO, OpenCV
+
+Описание: Интеграция SOTA решений по сегментации комнаты. Разработка алгоритмов выравнивание контуров стен, пола и других объектов. Улучшение качества SOTA решений по сегментации комнаты, путем пост обработки контуров объектов.
+
+##
+122. Разработка системы для записи аудио по протоколу ED 137
+
+
+Технологии: C++
+
+Описание: Сформирована архитектура, и набор принципов реализации.
+Делаем надёжную систему на основе микросеврисной архитектуры. Реализовали полную поддержку записи по ED 137, для одного из типов клиентов. Работает каркас из основных сервисов. Организована запись с поддержкой двух типов хранилищ, с циклической записью, и хранением метаданных в бд.
+
+
+##
+
+
+
+ВНИМАНИЕ! Если вы добавляете проект и в вашем описании есть разбиения на пункты, БОЛЬШАЯ просьба - пользуйтесь вот этой заготовкой:
+
+Features: 
+several access levels to the data and features;
+anything.
+
+
+
+

@@ -1,0 +1,16 @@
+[Unit]
+Description=LLM Switch RAG FastAPI service
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/path/to/llm_switch_rag
+ExecStart=/path/to/llm_switch_rag/.venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 5002
+Environment="GIGACHAT_AUTH_DATA=YOUR_GIGACHAT_AUTH_DATA"
+Environment="GIGACHAT_SCOPE=GIGACHAT_API_PERS"
+Environment="YANDEX_API_KEY=YOUR_YANDEX_API_KEY"
+Environment="YANDEX_FOLDER_ID=YOUR_YANDEX_FOLDER_ID"
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
